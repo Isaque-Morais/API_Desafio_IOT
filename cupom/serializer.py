@@ -5,7 +5,7 @@ from cupom.models import Cupom, ModeloNota
 class CupomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cupom
-        fields = ('id', 'numero_cupom', 'cnpj', 'cpf_doador', 'data', 'entidade_doacao')
+        fields = ('id', 'numero_cupom', 'cnpj', 'cpf_doador', 'valor_compra', 'data', 'entidade_doacao')
         
 class ModelosNotasSerializer(serializers.ModelSerializer):
     class Meta:
